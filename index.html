@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./img/icon.png" alt="icone Mario">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+    </div>
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img class="logo-mario" src="./img/logo.png" alt="logo do mario bros">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button class="contato" onclick="mostrarForm()">Entre em Contato</button>
+        </div>
+        <div>
+            <img class="img-mario-luigi" src="./img/mario.png" alt="logo mario e luigi">
+        </div>
+    </div>
+    <div class="caixa-video">
+        <video src="/img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a class="whatsapp"
+        href="https://api.whatsapp.com/send?phone=556299999999&text=Quero%20falar%20com%20os%20irm%C3%A3os%20Mario"><img
+            src="./img/whatsapp.png" alt="link para whatsapp" /></a>
+
+    <div class="mascara-form" onclick="esconderForm()"></div>
+
+    <form class="form-fale-conosco" action="https://formcarry.com/s/qF1vjGdsbta" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Nome" type="text" name="nome">
+        <input placeholder="Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+        <button class="orcamento" type="submit">Faça seu orçamento</button>
+    </form>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
